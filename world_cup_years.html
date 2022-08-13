@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+
+
+<script>
+	
+function pulaLinha(){
+	document.write("<br>");
+}
+
+
+function mostra(mensagem){
+	document.write(mensagem);
+	pulaLinha();
+}
+
+
+function anoCopa(ano){
+	while(ano <= 2020){
+		mostra(ano + " foi ano de Copa");
+		ano += 4;
+	}
+	mostra("A próxima Copa será em " + ano);
+}
+
+var ano = 1930; // primeiro edição da Copa
+anoCopa(ano);
+
+</script>
